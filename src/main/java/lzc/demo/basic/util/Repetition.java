@@ -1,7 +1,8 @@
 package lzc.demo.basic.util;
 
 /**
- * 比较两个字符串重复的算法
+ * 比较两个字符串重复的算法,相关说明可参见@see <a href="https://blog.csdn.net/znb769525443/article/details/52582888">csdn博客</a>
+ *
  * @author liuzongchang
  * @create 2018-05-10 10:33
  **/
