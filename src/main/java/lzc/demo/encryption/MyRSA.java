@@ -85,7 +85,7 @@ public class MyRSA {
 	}
 
 	/**
-	 * 还原公钥，X509EncodedKeySpec 用于构建公钥的规范
+	 *
 	 *
 	 * @param keyBytes
 	 * @return
