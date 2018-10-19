@@ -11,16 +11,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Application {
 
 	public static void main(String[] args) {
-//		SpringApplication.run(Application.class, args)
+		SpringApplication.run(Application.class, args);
 
 
-		//添加监听器
-		SpringApplication  application = new SpringApplication(Application.class);
-		application.addListeners(new MyApplicationStartedEventListener(),
-				new MyApplicationEnvironmentPreparedEventListener(),
-				new MyApplicationPreparedEventListener(),
-				new MyApplicationFailedEventListener());
-
-		application.run();
+//		//添加监听器
+//		SpringApplication  application = new SpringApplication(Application.class);
+//		application.addListeners(new MyApplicationStartedEventListener(),
+//				new MyApplicationEnvironmentPreparedEventListener(),
+//				new MyApplicationPreparedEventListener(),
+//				new MyApplicationFailedEventListener());
+//
+//		application.run();
 	}
 }
