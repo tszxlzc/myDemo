@@ -1,5 +1,6 @@
 package lzc.spring.cloud.feign.clients;
 
+import lzc.spring.cloud.feign.hystrix.SchedualServiceHiHystrix;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author liuzongchang
  * @date 2018/10/29 10:29
  */
-@FeignClient(value = "service-hi")
+@FeignClient(value = "service-hi", fallback = SchedualServiceHiHystrix.class)
 public interface SchedualServiceHi {
 
 	/**

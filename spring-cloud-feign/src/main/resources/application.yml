@@ -7,3 +7,7 @@ server:
 spring:
   application:
     name: service-feign
+#启动hystrix
+feign:
+  hystrix:
+    enabled: true
