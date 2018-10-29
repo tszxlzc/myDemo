@@ -52,6 +52,8 @@
         <module>spring-cloud-ribbon</module>
         <module>spring-cloud-feign</module>
         <module>spring-cloud-zuul</module>
+        <module>spring-cloud-config-server</module>
+        <module>spring-cloud-config-client</module>
     </modules>
 
 </project>
