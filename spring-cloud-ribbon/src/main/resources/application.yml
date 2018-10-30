@@ -14,4 +14,4 @@ management:
     enabled-by-default: true
     web:
       exposure:
-        include: "*"
+        include: "*"   #要加星号，或者指定include，否则很多管理不到，参见https://docs.spring.io/spring-boot/docs/2.0.6.RELEASE/reference/htmlsingle/#production-ready-endpoints-exposing-endpoints
