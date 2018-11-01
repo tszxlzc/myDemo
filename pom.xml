@@ -55,6 +55,7 @@
         <module>spring-cloud-zuul</module>
         <module>spring-cloud-config-server</module>
         <module>spring-cloud-config-client</module>
+        <module>reactor</module>
     </modules>
 
 </project>
