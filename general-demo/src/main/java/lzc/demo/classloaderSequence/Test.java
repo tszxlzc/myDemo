@@ -15,6 +15,10 @@ public class Test {
         System.out.println("Test类的静态块2"); //3
     }
 
+    {
+        System.out.println("ordinary method block"); //
+    }
+
     public Test(){
         System.out.println("Test类的无参数构造");
     }
