@@ -13,3 +13,5 @@ spring cloud参考博客地址https://blog.csdn.net/forezp/article/details/70148
 
 #spring cloud config
 config 包括spring-cloud-config-server和spring-cloud-config-client
+
+#spring mvc rest
