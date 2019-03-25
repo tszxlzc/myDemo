@@ -162,7 +162,7 @@ public class Test_1_3 {
 	 */
 	@Test
 	public void testBackpressure() {
-		Flux.range(1, 6)    // 1
+		Flux.range(1, 100)    // 1
 				.doOnRequest(n -> System.out.println("Request " + n + " values..."))    // 2
 				.subscribe(new BaseSubscriber<Integer>() {  // 3
 					@Override
@@ -173,13 +173,13 @@ public class Test_1_3 {
 
 					@Override
 					protected void hookOnNext(Integer value) {  // 6
-						try {
-							TimeUnit.SECONDS.sleep(1);  // 7
-						} catch (InterruptedException e) {
-							e.printStackTrace();
-						}
+//						try {
+////							TimeUnit.SECONDS.sleep(1);  // 7
+//						} catch (InterruptedException e) {
+//							e.printStackTrace();
+//						}
 						System.out.println("Get value [" + value + "]");    // 8
-						request(1); // 9
+						request(10); // 9
 					}
 				});
 	}
