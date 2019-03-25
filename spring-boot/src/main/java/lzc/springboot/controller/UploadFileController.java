@@ -1,15 +1,12 @@
 package lzc.springboot.controller;
 
-import org.apache.tomcat.util.http.fileupload.disk.DiskFileItem;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 
 /**
@@ -26,14 +23,10 @@ public class UploadFileController {
 			return "上传失败";
 		}
 		try {
-			CommonsMultipartFile cFile = (CommonsMultipartFile) file;
-			DiskFileItem fileItem = (DiskFileItem) cFile.getFileItem();
-			InputStream inputStream = fileItem.getInputStream();
-			InputStreamReader isr = new InputStreamReader(inputStream,"UTF-8");
-			BufferedReader br = new BufferedReader(isr);
+			BufferedReader reader = new BufferedReader(new InputStreamReader(file.getInputStream()));
 
 			String line;
-			while ((line = br.readLine()) != null){
+			while ((line = reader.readLine()) != null){
 				System.err.println(line);
 			}
 		} catch (IOException e) {
