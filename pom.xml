@@ -66,6 +66,7 @@
         <module>reactor</module>
         <module>pattern</module>
         <module>spring-boot-webflux</module>
+        <module>spring-statemachine</module>
     </modules>
 
 </project>
