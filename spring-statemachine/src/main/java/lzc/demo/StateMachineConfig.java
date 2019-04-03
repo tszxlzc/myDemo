@@ -58,6 +58,8 @@ public class StateMachineConfig
 			public void stateChanged(State<States, Events> from, State<States, Events> to) {
 				System.out.println("State change to " + to.getId());
 			}
+
+
 		};
 	}
 }

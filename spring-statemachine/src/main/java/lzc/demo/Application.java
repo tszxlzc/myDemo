@@ -25,5 +25,7 @@ public class Application implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		stateMachine.sendEvent(Events.E1);
 		stateMachine.sendEvent(Events.E2);
+		stateMachine.sendEvent(Events.E1);
+		stateMachine.sendEvent(Events.E2);
 	}
 }
