@@ -1,5 +1,7 @@
 package lzc.springboot.controller;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import lzc.springboot.mapper.TttMapper;
 import lzc.springboot.model.TttPO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,5 +25,22 @@ public class MybatisController {
 	@GetMapping("list_ttt")
 	public List<TttPO> listTtt(){
 		return tttMapper.listTtt();
+	}
+
+	/**
+	 * com.github.pagehelper.PageHelper  分页
+	 * @return
+	 * @author liuzongchang
+	 * @date 2019/4/8 15:11
+	 */
+	@GetMapping("page_ttt")
+	public List<TttPO> pageTtt(Integer pageNum){
+		if(pageNum == null){
+			pageNum =1;
+		}
+		Page page =  PageHelper.startPage(pageNum,2);
+		List<TttPO> list = tttMapper.listTtt();
+		System.out.println(page.getTotal());
+		return list;
 	}
 }
