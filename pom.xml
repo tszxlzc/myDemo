@@ -68,6 +68,7 @@
         <module>spring-boot-webflux</module>
         <module>spring-statemachine</module>
         <module>mina-demo</module>
+        <module>spring-freemarker</module>
     </modules>
 
 </project>
