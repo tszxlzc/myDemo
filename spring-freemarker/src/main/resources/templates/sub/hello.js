@@ -1,1 +1,1 @@
-alert("hello test");
+alert("sub目录下的js");

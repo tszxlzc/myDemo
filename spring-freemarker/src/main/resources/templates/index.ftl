@@ -12,12 +12,11 @@
 </script>
 <body>
 <h1>${message}</h1>
-<span>
+<h1>
     <#include "sub/include.ftl">
-</span>
-<br>
-<span>
+</h1>
+<h1>
     <#include "sub/include.html">
-</span>
+</h1>
 </body>
 </html>

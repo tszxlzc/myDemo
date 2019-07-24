@@ -1,1 +1,1 @@
-hello
+var hello = "静态文件js"
