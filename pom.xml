@@ -69,6 +69,7 @@
         <module>spring-statemachine</module>
         <module>mina-demo</module>
         <module>spring-freemarker</module>
+        <module>spring-cloud-native</module>
     </modules>
 
 </project>
