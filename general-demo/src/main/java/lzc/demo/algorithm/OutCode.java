@@ -15,12 +15,12 @@ public class OutCode {
         int highBound = 99, tmpIndex;
         while (highBound >= 1){
             tmpIndex = random.nextInt(1000) % highBound;
-            swap(a[tmpIndex],a[highBound],a);
+            swap(tmpIndex,highBound,a);
             highBound--;
         }
 
         for (int i=0; i< 100; i++){
-            System.out.print(a[i] + " ");
+            System.out.print(a[i] + ",");
         }
 
     }
