@@ -7,12 +7,12 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 @EnableAutoConfiguration
 public class SpringBootApplicationBootstrap {
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.setId("小马哥");
-        context.refresh();
+//        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+//        context.setId("小马哥");
+//        context.refresh();
 
         new SpringApplicationBuilder(SpringBootApplicationBootstrap.class)
-                .parent(context) // 显式地设置双亲上下文
+//                .parent(context) // 显式地设置双亲上下文
                 .run(args);
     }
 
