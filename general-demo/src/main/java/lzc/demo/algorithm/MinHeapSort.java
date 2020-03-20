@@ -3,6 +3,8 @@ package lzc.demo.algorithm;
 /**
  * 小顶堆堆排序
  *
+ * 建堆的时间复杂度O(nlogn)
+ *
  * 概念：
  * 小顶堆： r(i) <= r(2i+1), i = 1,2,...,n
  * 大顶堆： r(i) >=r(2i), i =1,2,...,n
@@ -27,7 +29,7 @@ public class MinHeapSort {
      * 最小堆
      * @param array
      */
-    private static void  myMinHeapSort(int[] array){
+    public static void  myMinHeapSort(int[] array){
         int i;
         int len = array.length;
         // len/2 - 1  父节点的最大位置（比len/2 - 1 位置大的节点都没有子节点）
@@ -50,12 +52,12 @@ public class MinHeapSort {
     }
 
     /**
-     * 置换后，调整堆
+     * 置换后，构建堆
      * @param a 数组
      * @param pos  子堆根节点的位置
      * @param len 为数组最大小标length -1 从后往前推
      */
-    private static void adjustMinHeap(int[] a, int pos, int len){
+    public static void adjustMinHeap(int[] a, int pos, int len){
         int temp;
         int child;
         //小顶堆 r(i) <= r(2i+1), i = 1,2,...,n
