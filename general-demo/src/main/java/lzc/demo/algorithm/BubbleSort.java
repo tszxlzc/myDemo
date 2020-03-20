@@ -2,7 +2,8 @@ package lzc.demo.algorithm;
 
 /**
  * 冒泡排序
- *
+ * <p></p>
+ *  <a href = "https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html">演示地址</a>
  * @author liuzongchang
  * @create 2018-06-12 14:29
  **/
@@ -12,12 +13,12 @@ public class BubbleSort {
 		//冒泡排序
 		//length-1 次遍历
 		for (int i = 0; i < a.length - 1; i++) {
-			//a[i] 跟a[j>=i+1]比较
-			for (int j = i+1; j < a.length; j++){
-				if(a[i] > a[j]){
-					int tmp = a[i];
-					a[i] = a[j];
-					a[j] = tmp;
+			// 最大值往上冒到 a.length -1 - i 的位置
+			for(int j=0;j < a.length -1 - i;j++){
+				if(a[j] > a[j+1]){
+					int tmp = a[j];
+					a[j] = a[j+1];
+					a[j+1] = tmp;
 				}
 			}
 		}
