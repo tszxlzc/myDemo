@@ -1,4 +1,4 @@
-package lzc.demo.algorithm;
+package lzc.demo.algorithm.sort;
 
 public class SelectSort {
     public static void main(String[] args) {

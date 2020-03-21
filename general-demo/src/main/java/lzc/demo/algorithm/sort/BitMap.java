@@ -10,7 +10,7 @@
  *  位图算法适用场景：
  *  在海量数据中查出重复出现的元素或者去除重复出现的元素
  */
-package lzc.demo.algorithm;
+package lzc.demo.algorithm.sort;
 
 import java.util.Random;
 

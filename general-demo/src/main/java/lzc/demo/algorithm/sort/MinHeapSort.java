@@ -1,4 +1,4 @@
-package lzc.demo.algorithm;
+package lzc.demo.algorithm.sort;
 
 /**
  * 小顶堆堆排序

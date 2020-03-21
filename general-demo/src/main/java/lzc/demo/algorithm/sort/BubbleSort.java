@@ -1,4 +1,4 @@
-package lzc.demo.algorithm;
+package lzc.demo.algorithm.sort;
 
 /**
  * 冒泡排序
