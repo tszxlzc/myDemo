@@ -35,13 +35,15 @@ public class TopK {
         // 先进行一次排序
         MinHeapSort.myMinHeapSort(top10);
 
-       for (int i=top10.length; i< arrayList.size(); i++){
-           if(top10[top10.length -1 ] < arrayList.get(i)){
-               top10[top10.length -1] = arrayList.get(i);
-               // 新的元素加进来，重新堆排序
-               MinHeapSort.myMinHeapSort(top10);
-           }
-       }
+        for(int i= top10.length; i< arrayList.size(); i++){
+            // top10数组堆排序后， 9的位置为最小值
+            if(top10[9] < arrayList.get(i)){
+                top10[9] = arrayList.get(i);
+                // 新的元素加进来，重新堆排序
+                MinHeapSort.myMinHeapSort(top10);
+            }
+        }
+
 
        long end = System.currentTimeMillis();
        System.out.println("耗时数" + (end -start));
