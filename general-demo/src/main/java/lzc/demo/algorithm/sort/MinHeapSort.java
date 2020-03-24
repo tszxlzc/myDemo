@@ -41,6 +41,7 @@ public class MinHeapSort {
              adjustMinHeap(array,i,len-1);
          }
 
+         // 上面的for 循环执行完之后已经是小顶堆了， 这里是进行真正的排序
          for(int i= len-1; i>=1; i--){
              // 交换堆顶元素和最后一个元素的位置
              int swap = array[0];
@@ -51,27 +52,6 @@ public class MinHeapSort {
              //前面已经做了交换，所以要 i - 1
              adjustMinHeap(array,0,i-1);
          }
-
-
-
-//        int i;
-//        int len = array.length;
-//        // len/2 - 1  父节点的最大位置（比len/2 - 1 位置大的节点都没有子节点）
-//        // 这里是循环调整所有父节点--即第一次调整整个大堆（父节点及其所有子节点可以看做一个子堆）
-//        // 从len/2 -1 开始，也就是从最底层的堆开始； 也就是对所有子堆进行调整，并且从最底部的len/2 -1个子堆进行调整
-//        for (i = len/2 -1; i>=0; i--){
-//            adjustMinHeap(array,i,len-1);
-//        }
-//
-//        for (i = len -1; i>=1; i--){
-//            // 交换堆顶元素和最后一个元素的位置
-//            int tmp =array[0];
-//            array[0] = array[i];
-//            array[i] = tmp;
-//
-//            // 调整置换后的剩余元素为小顶堆
-//            adjustMinHeap(array,0,i-1);
-//        }
 
     }
 
