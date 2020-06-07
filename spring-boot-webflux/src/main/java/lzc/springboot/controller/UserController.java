@@ -3,6 +3,7 @@ package lzc.springboot.controller;
 import lzc.springboot.model.User;
 import lzc.springboot.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,7 +26,7 @@ public class UserController {
         this.userRepository = userRepository;
     }
 
-    @PostMapping("/user/save")
+    @GetMapping("/user/save")
     public User user(@RequestParam String name) {
         User user = new User();
         user.setName(name);
