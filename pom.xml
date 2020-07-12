@@ -70,6 +70,7 @@
         <module>mina-demo</module>
         <module>spring-freemarker</module>
         <module>spring-cloud-native</module>
+        <module>spring-security</module>
         <module>union</module>
     </modules>
 
